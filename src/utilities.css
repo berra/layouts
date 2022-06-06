@@ -1,0 +1,22 @@
+/* Utilities */
+
+.max-inline-size\:measure {
+  max-inline-size: var(--measure);
+}
+
+.border\:thick {
+  border-width: var(--border-tick);
+}
+
+.border\:thin {
+  border-width: var(--border-thin);
+}
+
+.default-space,
+.space-1 {
+  --space: var(--s1);
+}
+
+.space-2 {
+  --space: var(--s2);
+}

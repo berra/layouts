@@ -1,0 +1,23 @@
+{
+  "name": "layouts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berra/layouts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berra/layouts/issues"
+  },
+  "homepage": "https://github.com/berra/layouts#readme",
+  "devDependencies": {
+    "parcel": "^2.6.0"
+  }
+}
