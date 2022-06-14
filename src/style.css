@@ -1,3 +1,13 @@
 @import "reset.css";
 @import "layout.css";
 @import "utilities.css";
+
+aside {
+  --size: 280px;
+}
+
+footer,
+header {
+  background-color: white;
+  outline: 5px dashed black;
+}

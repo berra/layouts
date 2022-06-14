@@ -16,7 +16,7 @@
   --s5: calc(var(--s4) * var(--ratio));
   --border-none: 0;
   --border-thin: 1px;
-  --border-tick: 3px;
+  --border-thick: 3px;
 }
 
 * {
@@ -82,4 +82,42 @@ body {
 .box.invert {
   color: var(--color-light);
   background-color: var(--color-dark);
+}
+
+/* center */
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  text-align: center;
+  max-inline-size: var(--measure);
+}
+
+/* cluster */
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, 1rem);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* sidebar */
+
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1);
+}
+
+.with-sidebar > :first-child {
+  flex-grow: 1;
+  flex-basis: var(--size, "auto");
+}
+
+.with-sidebar > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 70%;
 }

@@ -1,28 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Test</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header
+      class="box space-2 cluster justify-content:space-between align-items:center background:white"
+    >
+      <a href="/">LOGO</a>
+      <nav class="cluster">
+        <a href="#">Posts</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
     <main class="box space-2">
+      <div class="center">
+        <h1 class="text-align:center">This is a website with layout</h1>
+      </div>
 
-      <h1>This is a website with layout</h1>
-
-    <section class="stack default-space">
-      <article class="box border:thick">
-        <p>Harum eaque voluptas aspernatur necessitatibus commodi. Minus voluptas maiores amet ea necessitatibus in nam sapiente fuga eveniet omnis excepturi sit iste et. Non libero voluptatem quia quis sit ut at officia aut ullam consequuntur delectus temporibus non. Molestiae consequatur non tempora est qui placeat. Qui earum ut deserunt omnis qui. Nobis ut enim voluptas consequuntur ut error modi voluptatibus aut ullam. Placeat consectetur non minima atque ut qui et. Ea eos at quasi nobis culpa vero voluptas deserunt.</p>
-      </article>
-      <article class="box border:thick">
-        <p>Harum eaque voluptas aspernatur necessitatibus commodi. Minus voluptas maiores amet ea necessitatibus in nam sapiente fuga eveniet omnis excepturi sit iste et. Non libero voluptatem quia quis sit ut at officia aut ullam consequuntur delectus temporibus non. Molestiae consequatur non tempora est qui placeat. Qui earum ut deserunt omnis qui. Nobis ut enim voluptas consequuntur ut error modi voluptatibus aut ullam. Placeat consectetur non minima atque ut qui et. Ea eos at quasi nobis culpa vero voluptas deserunt.</p>
-      </article>
-      
-    </section>
-
-  </main>
-	<script src="index.js"></script>
+      <div class="center">
+        <div class="with-sidebar">
+          <aside>
+            <div class="inner">
+              <p>Something</p>
+            </div>
+          </aside>
+          <section class="stack text-align:start default-space">
+            <div class="center stack">
+              <article class="box stack border:thick">
+                <p>
+                  Harum eaque voluptas aspernatur necessitatibus commodi. Minus
+                  voluptas maiores amet ea necessitatibus in nam sapiente fuga
+                  eveniet omnis excepturi sit iste et. Non libero voluptatem
+                  quia quis sit ut at officia aut ullam consequuntur delectus
+                  temporibus non. Molestiae consequatur non tempora est qui
+                  placeat. Qui earum ut deserunt omnis qui. Nobis ut enim
+                  voluptas consequuntur ut error modi voluptatibus aut ullam.
+                  Placeat consectetur non minima atque ut qui et. Ea eos at
+                  quasi nobis culpa vero voluptas deserunt.
+                </p>
+                <div class="cluster">
+                  <span>Tag 1</span>
+                  <span>Tag 2</span>
+                  <span>Tag 3</span>
+                </div>
+              </article>
+              <article class="box stack border:thick">
+                <p>
+                  Harum eaque voluptas aspernatur necessitatibus commodi. Minus
+                  voluptas maiores amet ea necessitatibus in nam sapiente fuga
+                  eveniet omnis excepturi sit iste et. Non libero voluptatem
+                  quia quis sit ut at officia aut ullam consequuntur delectus
+                  temporibus non. Molestiae consequatur non tempora est qui
+                  placeat. Qui earum ut deserunt omnis qui. Nobis ut enim
+                  voluptas consequuntur ut error modi voluptatibus aut ullam.
+                  Placeat consectetur non minima atque ut qui et. Ea eos at
+                  quasi nobis culpa vero voluptas deserunt.
+                </p>
+                <div class="cluster">
+                  <span>Tag 1</span>
+                  <span>Tag 2</span>
+                  <span>Tag 3</span>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="box space-2 text-align:center">&copy; berra</footer>
+    <script src="index.js"></script>
   </body>
 </html>
