@@ -6,8 +6,18 @@ aside {
   --size: 280px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
 footer,
 header {
   background-color: white;
   outline: 5px dashed black;
+  position: relative;
 }
