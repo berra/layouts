@@ -3,6 +3,10 @@
 @import "utilities.css";
 @import "components.css";
 
+:root {
+  color-scheme: dark light;
+}
+
 aside {
   --size: 280px;
   background-color: #f8f8f8;
@@ -20,8 +24,7 @@ main {
 
 footer,
 header {
-  background-color: white;
-  outline: 5px dashed black;
+  outline: var(--border-thick) dashed currentColor;
   position: relative;
 }
 

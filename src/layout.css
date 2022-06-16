@@ -16,12 +16,13 @@
   --s5: calc(var(--s4) * var(--ratio));
   --border-none: 0;
   --border-thin: 1px;
-  --border-thick: 3px;
+  --border-thick: 8px;
 }
 
 * {
   max-inline-size: var(--measure);
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 :where(html, body, div, header, nav, main, footer) {
@@ -29,8 +30,8 @@
 }
 
 body {
-  background-color: var(--background);
-  color: var(--text-color);
+  /* background-color: var(--background);
+  color: var(--text-color); */
   line-height: var(--ratio);
 }
 
@@ -73,8 +74,8 @@ body {
   border: var(--border-none, 0) solid;
   --color-light: var(--background-color);
   --color-dark: var(--text-color);
-  color: var(--color-dark);
-  background-color: var(--color-light);
+  /* color: var(--color-dark);
+  background-color: var(--color-light); */
 }
 
 :where(.box *) {
