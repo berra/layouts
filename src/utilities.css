@@ -58,3 +58,9 @@
 .background-color\:light-grey {
   --background-color: #eee;
 }
+
+@media (prefers-color-scheme: dark) {
+  .background-color\:light-grey {
+    --background-color: #333;
+  }
+}

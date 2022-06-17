@@ -9,5 +9,5 @@
 .figure figcaption {
   margin-block-start: calc(var(--s1) / 2);
   font-size: 90%;
-  opacity: 0.9;
+  opacity: 0.8;
 }
