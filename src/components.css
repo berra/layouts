@@ -1,0 +1,13 @@
+.figure {
+  background-color: var(--background-color);
+  border: var(--border-thick) solid currentColor;
+  padding: var(--space);
+  margin-inline: calc(var(--space) * 2 * -1);
+  max-inline-size: none;
+}
+
+.figure figcaption {
+  margin-block-start: calc(var(--s1) / 2);
+  font-size: 90%;
+  opacity: 0.9;
+}

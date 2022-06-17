@@ -1,7 +1,7 @@
 :root {
   --measure: 60ch;
-  --background-color: #fffff1;
-  --text-color: #900;
+  --background-color: Canvas;
+  --text-color: CanvasText;
   --ratio: 1.5;
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
@@ -24,13 +24,7 @@
   font-family: sans-serif;
 }
 
-html,
-body,
-div,
-header,
-nav,
-main,
-footer {
+:where(html, body, div, header, nav, main, footer) {
   max-inline-size: none;
 }
 
@@ -60,7 +54,15 @@ body {
   block-size: 100%;
 }
 
-:where(.stack > :nth-child(2)) {
+:where(.stack.break-first > :nth-child(1)) {
+  margin-block-end: auto;
+}
+
+:where(.stack.break-second > :nth-child(2)) {
+  margin-block-end: auto;
+}
+
+:where(.stack.break-third > :nth-child(3)) {
   margin-block-end: auto;
 }
 
@@ -89,7 +91,7 @@ body {
 :where(.center) {
   box-sizing: content-box;
   margin-inline: auto;
-  text-align: center;
+  max-inline-size: var(--measure);
 }
 
 /* cluster */

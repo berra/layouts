@@ -1,9 +1,11 @@
 @import "reset.css";
 @import "layout.css";
 @import "utilities.css";
+@import "components.css";
 
 aside {
   --size: 280px;
+  background-color: #f8f8f8;
 }
 
 body {
@@ -13,6 +15,7 @@ body {
 
 main {
   flex-grow: 1;
+  padding: var(--space);
 }
 
 footer,

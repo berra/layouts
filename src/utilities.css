@@ -43,10 +43,18 @@
   align-items: center;
 }
 
+.max-inline-size\:none {
+  max-inline-size: none;
+}
+
 .max-inline-size\:100 {
   max-inline-size: 100%;
 }
 
 .background\:white {
-  background-color: white;
+  --background-color: #fff;
+}
+
+.background-color\:light-grey {
+  --background-color: #eee;
 }
