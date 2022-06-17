@@ -21,3 +21,18 @@ header {
   outline: 5px dashed black;
   position: relative;
 }
+
+header {
+  background-color: Canvas;
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+  margin-block-end: var(--s1);
+}
+
+a {
+  color: CanvasText;
+  font-weight: bold;
+}

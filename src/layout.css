@@ -42,25 +42,25 @@ body {
 
 /* stack */
 
-.stack {
+:where(.stack) {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.stack > * {
+:where(.stack > *) {
   margin-block: 0;
 }
 
-.stack > * + * {
+:where(.stack > * + *) {
   margin-block-start: var(--space, 1.5rem);
 }
 
-.stack:only-child {
+:where(.stack:only-child) {
   block-size: 100%;
 }
 
-.stack > :nth-child(2) {
+:where(.stack > :nth-child(2)) {
   margin-block-end: auto;
 }
 
@@ -86,16 +86,15 @@ body {
 
 /* center */
 
-.center {
+:where(.center) {
   box-sizing: content-box;
   margin-inline: auto;
   text-align: center;
-  max-inline-size: var(--measure);
 }
 
 /* cluster */
 
-.cluster {
+:where(.cluster) {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space, 1rem);
@@ -105,18 +104,18 @@ body {
 
 /* sidebar */
 
-.with-sidebar {
+:where(.with-sidebar) {
   display: flex;
   flex-wrap: wrap;
   gap: var(--s1);
 }
 
-.with-sidebar > :first-child {
+:where(.with-sidebar > :first-child) {
   flex-grow: 1;
   flex-basis: var(--size, "auto");
 }
 
-.with-sidebar > :last-child {
+:where(.with-sidebar > :last-child) {
   flex-basis: 0;
   flex-grow: 999;
   min-inline-size: 70%;
