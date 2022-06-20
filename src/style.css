@@ -42,3 +42,8 @@ a {
   color: CanvasText;
   font-weight: bold;
 }
+
+.cover {
+  background-color: black;
+  color: white;
+}

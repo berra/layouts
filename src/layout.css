@@ -123,3 +123,28 @@ body {
   flex-grow: 999;
   min-inline-size: 70%;
 }
+
+/* cover */
+
+:where(.cover) {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 50vh;
+  padding: 1rem;
+}
+
+:where(.cover > *) {
+  margin-block: 1rem;
+}
+
+:where(.cover > :first-child:not(.centered)) {
+  margin-block-start: 0;
+}
+
+:where(.cover > :last-child:not(.centered)) {
+  margin-block-end: 0;
+}
+
+:where(.cover > .centered) {
+  margin-block: auto;
+}
